@@ -384,10 +384,11 @@ Endpoints:
 
 Below are example request and response payloads for a handful of commonly-used endpoints. Replace placeholder values (IDs, JWTs, prices) with real values from your environment.
 
-## Authentication — Signup
+##Authentication — Signup
 POST /auth/signup
 Request (application/json):
-
+Copy code
+Json
 {
   "email": "abc618@gmail.com",
   "fullName": "Niaa",
@@ -395,46 +396,47 @@ Request (application/json):
   "password": "StrongPassw0rd!"
 }
 Response (201 Created):
-
-
+Copy code
+Json
 {
   "jwt": "eyJhbGciOiJIUzI1NiIsInR...",
   "message": "Register Successful",
   "role": "CUSTOMER"
 }
-## Authentication — Signin
+##Authentication — Signin
 POST /auth/signin
 Request (application/json):
-
-
+Copy code
+Json
 {
   "email": "abc618@gmail.com",
   "password": "StrongPassw0rd!"
 }
 Response (200 OK):
-
-
+Copy code
+Json
 {
   "jwt": "eyJhbGciOiJIUzI1NiIsInR...",
   "message": "Login Successful",
   "role": "CUSTOMER"
 }
 Protected endpoints require header:
-
+Copy code
 
 Authorization: Bearer eyJhbGciOiJIUzI1NiIsInR...
 ##Cart — Add Item
 PUT /api/cart/add
 Request:
-
+Copy code
+Json
 {
   "foodId": 42,
   "quantity": 2,
   "ingredients": ["extra_cheese", "no_onion"]
 }
 Response (200 OK):
-
-
+Copy code
+Json
 {
   "id": 123,
   "food": {
@@ -447,15 +449,15 @@ Response (200 OK):
 }
 ##Cart — Update Quantity
 PUT /api/cart-item/update
-
-
+Copy code
+Json
 {
   "cartItemId": 123,
   "quantity": 3
 }
 Response:
-
-
+Copy code
+Json
 {
   "id": 123,
   "food": {
@@ -468,8 +470,8 @@ Response:
 ##Cart — Get Cart
 GET /api/cart
 Response:
-
-
+Copy code
+Json
 {
   "id": 55,
   "customer": {
@@ -487,9 +489,10 @@ Response:
   ],
   "total": 597
 }
-## Restaurant — Create Restaurant (Admin)
+##Restaurant — Create Restaurant (Admin)
 POST /api/admin/restaurants
-
+Copy code
+Json
 {
   "name": "Spice Villa",
   "description": "Authentic Indian Cuisine",
@@ -503,7 +506,8 @@ POST /api/admin/restaurants
   "openingHours": "10:00-22:00"
 }
 Response (201 Created):
-
+Copy code
+Json
 {
   "id": 7,
   "name": "Spice Villa",
@@ -512,8 +516,8 @@ Response (201 Created):
 }
 ##Food — Create Food (Admin)
 POST /api/admin/food
-
-
+Copy code
+Json
 {
   "name": "Veg Biryani",
   "description": "Aromatic rice with fresh vegetables",
@@ -523,8 +527,8 @@ POST /api/admin/food
   "seasonal": false
 }
 Response (201 Created):
-
-
+Copy code
+Json
 {
   "id": 88,
   "name": "Veg Biryani",
@@ -534,8 +538,8 @@ Response (201 Created):
 }
 ##Order — Create Order
 POST /api/order
-
-
+Copy code
+Json
 {
   "restaurantId": 7,
   "deliveryAddress": {
@@ -546,8 +550,8 @@ POST /api/order
   }
 }
 Response:
-
-
+Copy code
+Json
 {
   "orderId": 987,
   "status": "PENDING",
@@ -557,7 +561,8 @@ Response:
 ##User Profile
 GET /api/users/profile
 Response:
-
+Copy code
+Json
 {
   "id": 21,
   "email": "abc618@gmail.com",
