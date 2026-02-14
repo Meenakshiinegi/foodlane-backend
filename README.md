@@ -1,5 +1,5 @@
 # Foodlane-backend
-## Online Food Delivery System-BAckend(Spring Boot)
+## Online Food Delivery System-Backend(Spring Boot)
 ### Overview
 This project is a backend application for an Online Food Delivery System built using Spring Boot. It provides RESTful APIs for user authentication, restaurant management, food ordering, cart operations, and secure payments.
 The system implements JWT-based authentication and role-based authorization to ensure secure access for customers and administrators.
