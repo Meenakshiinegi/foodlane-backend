@@ -33,22 +33,23 @@ Filter food items by category and restaurant.
 Persistent data storage using Spring Data JPA and Hibernate.
 ###
 RESTful API Architecture:Clean and structured REST APIs following standard HTTP methods.
-### Technologies Used
-### Backend:
-Java 11
-Spring Boot
-Spring Security
-JWT (JSON Web Tokens)
+## Technologies Used
 
-### Database:
-MySQL database
-JPA(Hibernate)
+### Backend
+- Java 11
+- Spring Boot
+- Spring Security
+- JWT (JSON Web Tokens)
 
-###Build & Tools
-Maven
-Postman
-Git & Github
-Stripe account for payment processing
+### Database
+- MySQL
+- Spring Data JPA (Hibernate)
+
+### Build & Tools
+- Maven
+- Postman
+- Git & GitHub
+- Stripe (for payment processing)
 
 ##Installation and Set up
 Prerequesites Java 11 and MySQL database Stripe account for payment processing backend setup
