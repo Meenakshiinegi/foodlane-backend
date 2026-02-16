@@ -396,13 +396,3 @@ Endpoints:
 	- Required header: `Authorization` (JWT)
 	- Response: `Food` (`201 Created` in code, logically `200 OK`)
 
----
-
-## Notes & Next Steps
-
-- I summarized each controller's endpoints and inputs/responses from the source. I preserved the status codes as used in code but noted where `201 Created` is used in places that are logically `200 OK` (this may be intentional or a minor inconsistency to clean).
-- Next steps (optional):
-	- Add example request/response JSON for key endpoints.
-	- Generate an OpenAPI/Swagger spec (Springdoc) for automated API docs.
-	- Add method-level JavaDoc in controllers for richer documentation.
-
