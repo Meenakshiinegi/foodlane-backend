@@ -51,14 +51,19 @@ RESTful API Architecture:Clean and structured REST APIs following standard HTTP 
 - Git & GitHub
 - Stripe (for payment processing)
 
-##Installation and Set up
-Prerequesites Java 11 and MySQL database Stripe account for payment processing backend setup
-##Register and Login
-Users can create an account and log in securely. JWT tokens are generated upon successful authentication and must be included in protected API requests.
-##Order Food 
-Customers can browse available restaurants and menu items, add items to their cart, and place orders.
-##Manage Orders 
-Restaurant owners or admins can view incoming orders, update order status, and manage menu items.
+## Installation and Setup
+
+- Install Java 11
+- Install MySQL and create a database
+- Configure application.properties with your database credentials
+- Set up a Stripe account for payment processing
+- Clone the repository:
+  git clone <your-repository-link>
+- Navigate to the project directory
+- Run the application using:
+  mvn spring-boot:run
+- Access the API at:
+  http://localhost:8080
 
 
 ## Controllers Documentation
