@@ -39,14 +39,17 @@ Java 11
 Spring Boot
 Spring Security
 JWT (JSON Web Tokens)
+
 ### Database:
 MySQL database
 JPA(Hibernate)
+
 ###Build & Tools
 Maven
 Postman
 Git & Github
 Stripe account for payment processing
+
 ##Installation and Set up
 Prerequesites Java 11 and MySQL database Stripe account for payment processing backend setup
 ##Register and Login
