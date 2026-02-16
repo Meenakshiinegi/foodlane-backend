@@ -4,24 +4,33 @@
 This project is a backend application for an Online Food Delivery System built using Spring Boot. It provides RESTful APIs for user authentication, restaurant management, food ordering, cart operations, and secure payments.
 The system implements JWT-based authentication and role-based authorization to ensure secure access for customers and administrators.
 ## Features
-### 
-JWT-Based Authentication & Authorization:Secure login and registration using Spring Security with role-based access (ADMIN, OWNER, CUSTOMER).
-###
-Restaurant Management:Admin can create, update, and manage restaurants with address and contact details.
-###
-Food & Category Management:Add, update, and categorize food items with price, description, availability, and vegetarian/seasonal flags.
-###
-Cart Management:Users can add, update, and remove food items from their cart before placing an order.
-###
-Order Processing System:Secure order placement and order tracking functionality.
-###
-Stripe Payment Integration:Integrated payment gateway for secure and seamless online transactions.
-###
-Role-Based Access Control (RBAC):Different access levels for Admin, Restaurant Owner, and Customer.
-###
-Search & Filtering:Filter food items by category and restaurant.
-###
-MySQL Database Integration:Persistent data storage using Spring Data JPA and Hibernate.
+
+### JWT-Based Authentication & Authorization
+Secure login and registration using Spring Security with role-based access (ADMIN, OWNER, CUSTOMER).
+
+### Restaurant Management
+Admin can create, update, and manage restaurants with address and contact details.
+
+### Food & Category Management
+Add, update, and categorize food items with price, description, availability, and vegetarian/seasonal flags.
+
+### Cart Management
+Users can add, update, and remove food items from their cart before placing an order.
+
+### Order Processing System
+Secure order placement and order tracking functionality.
+
+### Stripe Payment Integration
+Integrated payment gateway for secure and seamless online transactions.
+
+### Role-Based Access Control (RBAC)
+Different access levels for Admin, Restaurant Owner, and Customer.
+
+### Search & Filtering
+Filter food items by category and restaurant.
+
+### MySQL Database Integration
+Persistent data storage using Spring Data JPA and Hibernate.
 ###
 RESTful API Architecture:Clean and structured REST APIs following standard HTTP methods.
 ### Technologies Used
